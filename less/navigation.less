@@ -2,37 +2,42 @@
 .main-navigation {
     width: 100%;
     height: 90%;
-
+   
     .nav-container {
         height: 100%;
         display: flex;
-        align-items: center;
+        flex-direction: column;
+        text-align: center;
         justify-content: space-between;
-    
+        
+        
         @media @mobile {
           
         }
     
         .heading {
+            font-size: 4rem;
+
           @media @mobile {
             
           }
         }
     
         .nav {
-          width: 350px;
+          width: 400px;
           display: flex;
           justify-content: space-evenly;
+          text-align: center;
+          margin-left: 450px;
     
           @media @mobile {
           
           }
-          
-          
+
           a {
             font-size: 1.6rem;
-            color: @font-color;
             text-decoration: none;
+            align-content: center;
           }
         }
       }
