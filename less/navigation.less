@@ -4,40 +4,54 @@
     height: 90%;
    
     .nav-container {
-        height: 100%;
         display: flex;
         flex-direction: column;
-        text-align: center;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: stretch;
+        margin-bottom: 1rem;
         
         
         @media @mobile {
-          
+          width: 100%;
+
         }
     
         .heading {
-            font-size: 4rem;
+            font-size: 3rem;
+            margin-bottom: 3rem;
 
           @media @mobile {
-            
+            width: 80%;
           }
         }
     
         .nav {
-          width: 400px;
+          width: 45%;
           display: flex;
-          justify-content: space-evenly;
-          text-align: center;
-          margin-left: 450px;
+          justify-content: space-around;
+        
     
           @media @mobile {
+              width: 100%;
+              justify-content: space-around;
+              align-content: center;
+
           
           }
 
+        
+
           a {
-            font-size: 1.6rem;
+            font-size: 1.7rem;
             text-decoration: none;
             align-content: center;
+
+           &:hover {
+               text-decoration: underline;
+               text-decoration: black;
+           }
+
+
           }
         }
       }
