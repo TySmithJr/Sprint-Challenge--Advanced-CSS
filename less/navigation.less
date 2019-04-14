@@ -1,58 +1,45 @@
 // Navigation code here
-.main-navigation {
-    width: 100%;
-    height: 90%;
-   
-    .nav-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: stretch;
-        margin-bottom: 1rem;
-        
-        
-        @media @mobile {
-          width: 100%;
 
-        }
-    
-        .heading {
-            font-size: 3rem;
-            margin-bottom: 3rem;
+.nav-header {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 1rem;
 
-          @media @mobile {
+    @media @phone {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-bottom: 3rem;
+
+        @media @phone {
             width: 80%;
-          }
-        }
-    
-        .nav {
-          width: 45%;
-          display: flex;
-          justify-content: space-around;
-        
-    
-          @media @mobile {
-              width: 100%;
-              justify-content: space-around;
-              align-content: center;
-
-          
-          }
-
-        
-
-          a {
-            font-size: 1.7rem;
-            text-decoration: none;
-            align-content: center;
-
-           &:hover {
-               text-decoration: underline;
-               text-decoration: black;
-           }
-
-
-          }
-        }
-      }
+        } 
     } 
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        width: 45%;
+
+        @media @phone {
+        width: 100%;
+        justify-content: space-around;
+        align-content: center;
+        }
+
+
+        a {
+            font-size: 1.5rem;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+                text-decoration-color: black;
+            }
+        } 
+    } // nav
+} // .nav-header
